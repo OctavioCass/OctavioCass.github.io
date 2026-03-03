@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica - Configuración de Servidor Web</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #eef2f3, #dfe9f3);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: white;
+            width: 80%;
+            max-width: 700px;
+            margin: 80px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 0;
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: #2c3e50;
+        }
+
+        .status {
+            color: green;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 6px 0;
+        }
+
+        .info {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 13px;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Servidor del Grupo 403</h1>
+        <h2>Práctica - Configuración de Servidor Web</h2>
+
+        <p>Configuración y simulación de servidor web en entorno Ubuntu.</p>
+        <p>Plataforma utilizada: GitHub Pages (Simulación académica)</p>
+
+        <p>Estado del servidor: <span class="status">En línea ✔</span></p>
+
+        <hr>
+
+        <h3>Integrantes del equipo:</h3>
+        <ul>
+            <li><strong>Daniel Octavio Ochoa</strong></li>
+            <li>Armando Rodríguez Medina</li>
+            <li>José Miguel Saavedra De Jesus</li>
+            <li>Rolando Gael Palacios Basurto</li>
+            <li>Irving Vega Islas</li>
+            <li>Diego Vásquez Pacheco</li>
+            <li>Jade Nurit Librado Aguirre</li>
+        </ul>
+
+        <div class="info">
+            <p><strong>Sistema operativo:</strong> Ubuntu 22.04</p>
+            <p><strong>Servidor web:</strong> Apache2</p>
+            <p><strong>Puerto:</strong> 80</p>
+        </div>
+
+        <div class="footer">
+            <p id="fecha"></p>
+        </div>
+    </div>
+
+    <script>
+        const fecha = new Date();
+        document.getElementById("fecha").innerHTML =
+            "Fecha de despliegue: " + fecha.toLocaleDateString() + 
+            " | Hora: " + fecha.toLocaleTimeString();
+    </script>
+
+</body>
+</html>
